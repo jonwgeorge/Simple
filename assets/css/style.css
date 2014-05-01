@@ -345,3 +345,38 @@ HR {
 	#sddm div a:hover
 	{	background: #49A3FF;
 		color: #FFF}
+
+/* Ouija
+---------------------------------------- */
+.post-ouija.ouija-active {
+  right: 0;
+}
+ 
+.ouija .ouija-controls a {
+    height: 21px;
+    padding-top: 1px;
+    font-family: "Open Sans", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+.ouija .ouija-controls a.add {
+    font-size: 17px;
+}
+.ouija .ouija-controls a.add:after {
+    margin-top: -1px;
+    -webkit-transform-origin: 6px 9px;
+    -moz-transform-origin: 6px 9px;
+    -ms-transform-origin: 6px 9px;
+    -o-transform-origin: 6px 9px;
+    transform-origin: 6px 9px;
+}
+ 
+.ouija.ouija-active .ouija-comments {
+    margin-left: 15px;
+}
+ 
+.ouija .ouija-comments {
+    width: 245px;
+}
+ 
+.ouija .ouija-login h5 {
+    margin: 0 0 .5em;
+}

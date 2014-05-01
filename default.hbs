@@ -6,13 +6,13 @@
     
     <title>{{meta_title}}</title>
 
-    <link rel="stylesheet" href="/assets/css/normalize.css">
-    <link rel="stylesheet" href="/assets/css/style.css">    
     <link rel="stylesheet" href="/assets/css/jquery.darkbox.css">
     <!--[if lt IE 9]><link rel="stylesheet" href="/assets/css/jquery.darkbox.ie.css"><![endif]-->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="http://cdn.goinstant.net/external/ouija/latest/ouija.min.css"/>
+    <link rel="stylesheet" href="https://cdn.goinstant.net/external/ouija/v0.1.1/ouija.min.css"/>
     <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
     <meta name="description" content="{{meta_description}}" />
 
@@ -42,9 +42,10 @@
     <script>
         window.ouija_connect_url = 'https://goinstant.net/jonwgeorge/ouija';
         window.ouija_identifier = {{id}};
+        window.ouija_article_content = '.post-excerpt';
     </script>
     <script src="https://cdn.goinstant.net/v1/platform.min.js"></script>
-    <script src="https://cdn.goinstant.net/external/ouija/latest/ouija.min.js?v=1"></script>
+    <script src="https://cdn.goinstant.net/external/ouija/v0.1.1/ouija.min.js"></script>
     {{/with}}
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
