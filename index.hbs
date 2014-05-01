@@ -1,0 +1,36 @@
+{{!< default}}
+
+<div class="wrapper">
+    
+    <ul style="display:none;">
+        <li><a href="https://twitter.com/jonwgeorge" rel="me">@jonwgeorge on Twitter</a></li>
+        <li><a href="https://github.com/jonwgeorge" rel="me">Github</a></li>
+        <li><a href="https://plus.google.com/107398612404191401698" rel="me">Google</a></li>
+        <li><a href="sms:+14794263101" rel="me">(479) 426-3101</a></li>
+        <li><a href="mailto:hello@jonwgeorge.com" rel="me">hello@jonwgeorge.com</a></li>
+    </ul>
+    
+	{{> header}}
+
+	<section class="articles">
+		{{#foreach posts}}
+
+	    <article class="{{post_class}}">
+	        <header class="post-header">
+	            <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>	            
+	            <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}} | Posted in {{tags}}</time>
+                <a href="{{url}}">{{content words="0"}}</a>
+	        </header>
+	        
+	        <section class="post-excerpt">
+	            <p>{{excerpt}}&hellip; <a href="{{url}}">(read more)</a></p>
+	        </section>
+	    </article>
+
+	    {{/foreach}}
+
+	    {{pagination}}
+	</section>
+		
+	{{> footer}}
+</div>

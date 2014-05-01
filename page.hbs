@@ -1,0 +1,23 @@
+{{!< default}}
+
+<div class="wrapper">
+    {{> header}}
+
+    <section class="articles">
+        {{#post}}
+
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
+            </header>
+            
+            <section class="post-excerpt">
+                {{content}}
+            </section>
+        </article>
+
+        {{/post}}
+    </section>
+    
+    {{> footer}}
+</div>

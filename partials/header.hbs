@@ -1,0 +1,18 @@
+<header class="header">		
+	</section>
+	<div class="logo"{{#if @blog.cover}} style="background-image: url({{@blog.cover}});"{{/if}}>
+		<h1>
+			<a href="{{@blog.url}}">{{@blog.title}}</a>
+		</h1>	
+
+		<div class="blog-description">
+			<div class="through-line">{{@blog.description}}</div>		
+		</div>
+    <section class="navigation">
+        <div calss="navigation-inner">
+            {{> menu}}
+        </div>
+    </section>
+	</div>
+<section id="results"></section>
+</header>

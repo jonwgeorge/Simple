@@ -1,0 +1,41 @@
+{{!< default}}
+
+<div class="wrapper">
+    {{> header}}
+
+    <section class="articles">
+        {{#post}}
+
+        <article class="{{post_class}}">
+            <header class="post-header">
+                <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>               
+                <time datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD, YYYY"}}</time>
+            </header>
+            
+            <section class="post-excerpt">
+                {{content}}
+            </section>
+            <section>
+                {{> share-links}}
+            </section>
+        </article>
+        
+        <section class="author-profile">
+            <div class="author-image">
+                <img class="author-image-inner" src="{{author.image}}" /> 
+            </div>
+            <div class="author-bio">
+                <div class="author-name">{{author.name}}</div>
+                <div class="author-bio-text">{{author.bio}}</div>
+            </div>
+        </section>
+        
+        <div class="clearfix">
+            
+        </div>
+
+        {{/post}}
+    </section>
+    
+    {{> footer}}
+</div>

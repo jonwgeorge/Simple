@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    
+    <title>{{meta_title}}</title>
+
+    <link rel="stylesheet" href="/assets/css/normalize.css">
+    <link rel="stylesheet" href="/assets/css/style.css">    
+    <link rel="stylesheet" href="/assets/css/jquery.darkbox.css">
+    <!--[if lt IE 9]><link rel="stylesheet" href="/assets/css/jquery.darkbox.ie.css"><![endif]-->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="http://cdn.goinstant.net/external/ouija/latest/ouija.min.css"/>
+    <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+
+    <meta name="description" content="{{meta_description}}" />
+
+    {{ghost_head}}
+</head>
+<body class="{{body_class}}">
+    <div class="head_wrapper">
+        <section class="social-links">
+            <div class="social-links-inner">
+                {{> social-links}}	
+            </div>			
+        </section>
+    </div>
+    
+    {{{body}}}
+
+    {{ghost_foot}}
+
+    <script src="/assets/js/jquery.darkbox.min.js"></script>
+    <script src="/assets/js/jquery.fitvids.js"></script>
+    <script src="/assets/js/SmoothScroll.js"></script>
+    <script src="/assets/js/trmix.min.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/jquery.ghostHunter.min.js"></script>
+    {{#with post}}
+    <script>
+        window.ouija_connect_url = 'https://goinstant.net/e81083ce8490/ouija';
+        window.ouija_identifier = {{id}};
+    </script>
+    <script src="https://cdn.goinstant.net/v1/platform.min.js"></script>
+    <script src="https://cdn.goinstant.net/external/ouija/latest/ouija.min.js?v=1"></script>
+    {{/with}}
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-50538906-1', 'jonwgeorge.com');
+        ga('send', 'pageview');
+
+    </script>
+    <script>
+        var searchField = $("#search-field").ghostHunter({
+            results   : "#results",
+            onKeyUp         : true,
+            displaySearchInfo   : false,
+            result_template : "<a href='{{link}}'><p><h2 class='post-title'>{{title}}</h2><time datetime='{{date format='YYYY-MM-DD'}}'> {{pubDate}}</time>{{description}}</p></a>"
+        });
+        
+        function clearResults() {
+          searchField.clear();
+        }
+    </script>
+</body>
+</html>
