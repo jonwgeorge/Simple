@@ -40,6 +40,7 @@
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/jquery.ghostHunter.min.js"></script>
+    <script src="/assets/js/search.js"></script>
     {{#with post}}
     <script>
         window.ouija_connect_url = 'https://goinstant.net/jonwgeorge/ouija';
@@ -58,19 +59,6 @@
         ga('create', 'UA-50538906-1', 'jonwgeorge.com');
         ga('send', 'pageview');
 
-    </script>
-    <script>
-        var searchField = $("#search-field").ghostHunter({
-            results   : "#results",
-            rss         : "/rss",
-            onKeyUp         : true,
-            displaySearchInfo   : false,
-            result_template : "<a href='{{link}}'><p><h2 class=\"post-title\">{{title}}</h2><time> {{pubDate}}</time>{{description}}</p></a>"
-        });
-        
-        function clearResults() {
-          searchField.clear();
-        }
     </script>
 </body>
 </html>
