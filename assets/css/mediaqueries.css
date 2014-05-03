@@ -16,7 +16,8 @@
     }
     
     .logo {
-        width: 130%;
+        width: 100%;
+        margin: 0 auto;
         display: inline-block;
     }
     
@@ -28,8 +29,16 @@
         text-align: center;
     }
     
+    .navigation {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     .poweredby {
-        background-color: #ebe8df;
+        background-color: #fff;
         margin-left: -2%;
         margin-right: -2%;
         margin-bottom: -3%;

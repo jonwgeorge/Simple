@@ -1,24 +1,35 @@
-<ul id="sddm">
-    <li><a href="/">Home</a></li>
-    <li><a href="#" 
-        onmouseover="mopen('m2')" 
-        onmouseout="mclosetime()">Projects</a>
-        <div id="m2" 
-            onmouseover="mcancelclosetime()" 
-            onmouseout="mclosetime()">
-        <a href="/retro-time/">Retro Time Pebble Watchface</a>
-        </div>
-    </li>
-    <li><a href="/about/">About Me</a></li>
-    <li><a href="/contact/">Contact Me</a></li>
-    <li><a href="/subscribe/">Subscribe</a></li>
-</ul>
-<div style="clear:both"></div>
-<div style="float:right;margin-top:-20px;">
-    <form>
-        <div class="input-prepend">
-            <span class="add-on"><i class="fa fa-search"></i></span>
-            <input id="search-field" placeholder="Search..." style="border: 0px solid;width: 100px;" />
-        </div>
-    </form>
-</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Home</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Porjects <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="/retro-time/">Retro Time Pebble Watchface</a></li>
+          </ul>
+        </li>
+        <li><a href="/about/">About Me</a></li>
+        <li><a href="/contact/">Contact Me</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form navbar-left" role="search">
+            <div class="form-group">
+                <input type="text" id="search-field" class="form-control" placeholder="Search">
+            </div>
+        </form>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

@@ -8,12 +8,13 @@
 
     <link rel="stylesheet" href="/assets/css/jquery.darkbox.css">
     <!--[if lt IE 9]><link rel="stylesheet" href="/assets/css/jquery.darkbox.ie.css"><![endif]-->
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdn.goinstant.net/external/ouija/v0.1.1/ouija.min.css"/>
-    <link rel="stylesheet" href="/assets/css/mediaqueries.css">
     <link rel="stylesheet" href="/assets/css/normalize.css">
     <link rel="stylesheet" href="/assets/css/style.css">
-
+    <link rel="stylesheet" href="/assets/css/mediaqueries.css">
+    
     <meta name="description" content="{{meta_description}}" />
 
     {{ghost_head}}
@@ -35,6 +36,7 @@
     <script src="/assets/js/jquery.fitvids.js"></script>
     <script src="/assets/js/SmoothScroll.js"></script>
     <script src="/assets/js/trmix.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <script src="/assets/js/menu.js"></script>
     <script src="/assets/js/main.js"></script>
     <script src="/assets/js/jquery.ghostHunter.min.js"></script>
@@ -60,9 +62,10 @@
     <script>
         var searchField = $("#search-field").ghostHunter({
             results   : "#results",
+            rss         : "/rss",
             onKeyUp         : true,
             displaySearchInfo   : false,
-            result_template : "<a href='{{link}}'><p><h2 class='post-title'>{{title}}</h2><time datetime='{{date format='YYYY-MM-DD'}}'> {{pubDate}}</time>{{description}}</p></a>"
+            result_template : "<a href='{{link}}'><p><h2 class=\"post-title\">{{title}}</h2><time> {{pubDate}}</time>{{description}}</p></a>"
         });
         
         function clearResults() {
