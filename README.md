@@ -41,6 +41,6 @@ Ghost Aton (0.4) bring to us static pages feature. So if you want to add links o
 Simple uses a search funtion powered by <a href="https://github.com/i11ume/ghostHunter">Ghost Hunter</a>. Just type and your posts will be automaticlly indexed and displayed.
 
 ####Twitter Cards
-Set up your Twitter profile in <code>default.hbs</code>:
+Set up your Twitter profile in <code>post.hbs</code>:
 <pre><code>&lt;meta name="twitter:site" content="@username"&gt;
 &lt;meta name="twitter:creator" content="@username"&gt;</code></pre>
