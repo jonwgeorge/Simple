@@ -31,9 +31,9 @@ You can add another social icons if you want because **Simple** uses Font Awesom
 **PLEASE NOTE: Ouija comments are still in development, and may not work as intended. If you do not wish to use this feature, you may replace the contents of the <code>partials/comments.hbs</code> with the embed code of the platform of your choice.
 
 If you would like to use Ouija comments just change your shortname in <code>partials/comments.hbs</code>:
-<code>
+<pre><code>
 window.ouija_connect_url = 'https://goinstant.net/GOINSTANT-USERNAME/ouija';
-</code>
+</code></pre>
 
 ####Static pages menu
 Ghost Aton (0.4) bring to us static pages feature. So if you want to add links of static pages in menu, you need to modify <code>partials/navigation.hbs</code>.
