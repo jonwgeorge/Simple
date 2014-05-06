@@ -33,12 +33,12 @@ You can add another social icons if you want because **Simple** uses Font Awesom
 If you would like to use Ouija comments just change your shortname in <code>partials/comments.hbs</code>:
 <pre><code>{{#with post}}
 {{#unless page}}
-\<script\>
+<pre><script>
     window.ouija_connect_url = 'https://goinstant.net/GOINSTANT-USERNAME/ouija';
     window.ouija_identifier = {{id}};
     window.ouija_article_content = '.post-excerpt';
     window.ouija_section_elements = 'p, ol';
-\</script\>
+</script></pre>
 <script src="https://cdn.goinstant.net/v1/platform.min.js"></script>
 <script src="https://cdn.goinstant.net/external/ouija/v0.1.2/ouija.min.js"></script>
 {{/unless}}
