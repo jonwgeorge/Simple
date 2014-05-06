@@ -1,6 +1,6 @@
 {
-  "name": "JG_Blog",
-  "version": "1.0.1",
+  "name": "Simple",
+  "version": "0.1.0",
   "author": "Jonathan George",
-  "description": "Custom theme for http://jonwgeorge.com"
+  "description": "A clean, minimal and responsive theme for Ghost."
 }
