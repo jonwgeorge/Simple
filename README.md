@@ -37,6 +37,9 @@ example</code></pre>
 ####Static pages menu
 Ghost Aton (0.4) bring to us static pages feature. So if you want to add links of static pages in menu, you need to modify <code>partials/navigation.hbs</code>.
 
+#####Search Box
+Simple uses a search funtion powered by <a href="https://github.com/i11ume/ghostHunter">Ghost Hunter</a>. Just type and your posts will be automaticlly indexed and displayed.
+
 ####Twitter Cards
 Set up your Twitter profile in <code>default.hbs</code>:
 <pre><code>&lt;meta name="twitter:site" content="@username"&gt;
