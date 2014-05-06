@@ -1,4 +1,4 @@
-###Simple — A theme for Ghost
+###Simple — A theme for Ghost 
 
 ###Overview
 **Simple** is clean, minimal and responsive theme for Ghost.
